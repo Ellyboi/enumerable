@@ -9,8 +9,17 @@ AllCops:
 
 Layout/LineLength:
   Max: 120
-Metrics/MethodLength:
+Metrics/BlockLength:
+  Enabled: true
+  CountComments: false
   Max: 20
+  CountAsOne: false
+  AllowedMethods:
+    - allowed_method_name
+  AllowedPatterns:
+    - ^allowed_pattern
+  Exclude:
+    - ignored_file.rb
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
